@@ -1,3 +1,5 @@
+/*@import url('legend.less');*/
+@import url(http://allfont.net/allfont.css?fonts=montserrat-light);
 @import url('services.css');
 @import url('themes.css');
 @import url('projects.css');
@@ -8,7 +10,13 @@
     font-family: 'Roboto', sans-serif; 400
 
 	font-family: 'Raleway', sans-serif; 300,400,500,600,700,800
+	font-family: 'Montserrat Light', arial; Montserrat-UltraLight
 */
+@font-face {
+    font-family: 'Montserrat UltraLight'; /* Имя шрифта */
+    src: url(fonts/Montserrat-UltraLight.otf); /* Путь к файлу со шрифтом */
+   }
+
 html, body{ margin: 0; 
 	padding:0;
 } 
@@ -57,7 +65,8 @@ h1{
 }
 .logo-link {
 	background: url(../images/logo_images.png)  no-repeat;
-	font-weight: 400;
+	/*font-family: 'Montserrat Light', sans-serif;*/
+	font-weight:400;
 	color:#fff;
 	font-size: 34px;
 	vertical-align: top;

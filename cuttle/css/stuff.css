@@ -1,0 +1,326 @@
+/*----------   fonts   -----------------*/
+.main_type {
+margin-top:0;
+
+}
+body.price_feed p.main_type, body.price_bar p.main_type {
+margin-right:0;
+}
+.bold {
+font-weight:bold;
+}
+.copy {
+color:#e1c07b;
+font-size:10px;
+font-family: Verdana, Arial, sans-serif;
+text-align:center;
+display:block;
+width:300px;
+position:absolute;
+left:310px;
+top:104px;
+}
+#content p {
+margin-top:10px;
+}
+.price_head {
+font-family:"Times New Roman", Arial, sans-serif;
+text-decoration:underline;
+font-weight:bold;
+color:#000;
+font-size:17px;
+
+}
+.price p {
+margin-left:0;
+ }
+.twice_price {
+font-size:15px;
+color:#000;
+font-weight:bold;
+display:block;
+float:right;
+} 
+.gramm {
+font-size:15px;
+color:#4048DD;
+font-weight:bold;
+float:left;
+display:block;
+}
+/*----------     contacts  ------------*/
+#scheme {
+width:277px;
+height:230px;
+float:right;
+background:url(../images/scheme.jpg) no-repeat;
+margin-top:-180px;
+margin-right:70px;
+border:3px solid #42230d;
+}
+.first_cont {
+font-size:21px;
+font-weight:bold;
+float:right;
+margin-right:160px;
+}
+
+/*------------     slider  ---------------*/
+
+#wrap_slider {
+height:150px;
+margin-top:10px;
+margin-left:5px;
+overflow:hidden;
+position:relative;
+width:630px;
+outline:1px solid red;
+padding-left:40px;
+padding-right:40px;
+}
+#slider {
+/*height:150px;*/
+margin-top:10px;
+margin-left:5px;
+
+position:relative;
+/*width:auto;*/
+}
+body.feed #slider, body.bar #slider {
+/*margin-top:50px;*/
+margin-left:50px;
+}
+.prev{
+position:absolute;
+top:26px;
+left:0;
+z-index:3;
+background:url(../images/prev.png) no-repeat;
+width:31px;
+height:76px;
+/*float:left;
+margin:26px 5px 0 14px;
+*/
+
+}
+.next{
+position:absolute;
+top:26px;
+right:0;
+z-index:4;
+background:url(../images/next.png) no-repeat;
+width:31px;
+height:76px;
+/*float:right;
+margin-top:26px;
+
+*/
+}
+
+.frame {
+padding-left:14px;
+padding-top:14px;
+margin-right:13px;
+float:left;
+
+/*background:url(../images/frame_png.png) no-repeat;
+width:180px;
+height:121px;
+*/
+
+background:url(../images/third_frame.png) no-repeat;
+width:271px;
+height:142px;
+
+}
+body.price_bar .frame, body.price_feed .frame {
+background:url(../images/frame_png150.png) no-repeat;
+width:178px;
+height:177px;
+} 
+
+
+body.feed #slider div.frame, body.bar #slider div.frame  {
+margin-top:45px;
+position:relative;
+min-height:160px;
+}
+body.feed #slider div.frame  span, body.bar #slider div.frame span{
+display:block;
+font-family:"Times New Roman", Arial, sans-serif;
+font-size:19px;
+color:#1f0901;
+position:relative;
+left:20px;
+top:35px;
+width:190px;
+text-align:center;
+height:auto;
+}
+/*----------------      price  -------------------------*/
+.price {
+margin-top:20px;
+margin-left:30px;
+width:650px;
+
+float:left;
+}
+
+.in_price {
+float:left;
+width:420px;
+}
+.price .frame {
+
+}
+
+/*-------------        carousel  --------------*/
+	#carousel_container {
+	padding-left:10px;
+	margin-top:10px;
+	}
+    #carousel_inner {  
+    float:left; /* important for inline positioning */  
+    width:610px; /* important (this width = width of list item(including margin) * items shown */  
+    overflow: hidden;  /* important (hide the items outside the div) */  
+    /* non-important styling bellow */  
+    height:150px;  
+	margin-left:20px;
+	margin-right:10px;
+    }  
+      
+    #carousel_ul {  
+    position:relative;  
+    height:150px;
+    list-style-type: none; /* removing the default styling for unordered list items */  
+    margin: 0px;  
+	padding: 0px; 
+    width:9999px; /* important */  
+     
+    }  
+       
+    #carousel_ul li{  
+    float: left; /* important for inline positioning of the list items */  
+ padding-left:14px;
+padding-top:14px;
+width:180px;
+height:121px;
+background:url(../images/frame_png.png) no-repeat;
+margin-right:8px; 
+
+
+    }  
+      
+    #carousel_ul li img {  
+    .margin-bottom:-4px; /* IE is making a 4px gap bellow an image inside of an anchor (<a href...>) so this is to fix that*/  
+    /* styling */  
+    cursor:pointer;  
+    cursor: hand;  
+    border:0px; 
+    }  
+    #left_scroll, #right_scroll{  
+    float:left;  
+    height:130px;  
+    width:15px;  
+   margin-top:26px; 
+    }  
+    #left_scroll img, #right_scroll img{  
+    /*styling*/  
+  cursor: pointer;  
+    cursor: hand;  
+    } 
+
+/*------   form order     ---------------*/
+
+#form_order {
+width:606px;
+height:358px;
+background:url(../images/form.jpg) no-repeat;
+margin-left:50px;
+}
+
+#adm_form input {
+width:370px;
+height:20px;
+background:transparent;
+float:right;
+margin-top:11px;
+}
+#adm_form textarea {
+height:90px;
+background:transparent;
+width:370px;
+border:none;
+margin-top:9px;
+margin-left:7px;
+overflow:auto;
+}
+#adm_form label {
+color:#f8d589;
+font-size:19px;
+font-family:"Times New Roman", Arial, sans-serif;
+text-align:right;
+}
+.wrap_inp input {
+/*margin-top:4px;
+display:block;*/
+}
+.wrap_inp {
+padding-top:3px;
+padding-right:13px;
+}
+#adm_form  .wrap_inp .cap {
+width:85px;
+height:33px;
+display:block;
+margin-top:15px;
+}
+#adm_form  .wrap_inp .cap1 {
+margin-left:20px;
+}
+
+#adm_form  .wrap_inp .form_sub {
+width:127px;
+height:31px;
+background:url(../images/form_sub.jpg);
+margin:16px 3px 0 50px;
+font-family:"Times New Roman", Arial, sans-serif;
+font-size:22px;
+color:#1f0901;
+*margin-top:-64px;
+*margin-right:15px;
+}
+.form_type {
+float:left;
+width:215px;
+}
+.form_type p {
+color:#f8d589;
+font-size:19px;
+font-family:"Times New Roman", Arial, sans-serif;
+text-align:right;
+margin:0;
+}
+
+
+/*           point black      */
+.back {
+text-decoration:underline;
+color:#000;
+font-family: "Times New Roman",Arial,sans-serif;
+font-size: 19px;
+margin-top:30px;
+margin-left:50%;
+float:left;
+}
+
+
+
+
+
+
+
+
+
+
+

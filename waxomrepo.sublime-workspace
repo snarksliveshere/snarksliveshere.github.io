@@ -1,0 +1,626 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Montserra",
+				"Montserrat-UltraLight"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"la",
+				"layout"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"text-tr",
+				"text-transform"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"mar",
+				"mr-a\tmargin-right: auto;"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"pos",
+				"pos\tposition: ${1:relative};"
+			],
+			[
+				"themes",
+				"themes__purchase"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"border-b",
+				"border-bottom-color"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"marin",
+				"margin"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"border-to",
+				"border-top-right-radius"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"box-",
+				"box-shadow"
+			],
+			[
+				"paddno",
+				"padding-bottom"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"inle",
+				"inline-block"
+			],
+			[
+				"tr",
+				"transparent"
+			],
+			[
+				"colu",
+				"column-count"
+			],
+			[
+				"box-s",
+				"box-sizing"
+			],
+			[
+				"co",
+				"content-box"
+			],
+			[
+				"content",
+				"content"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"_",
+				"_SESSION"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"vc",
+				"vc_create_edit"
+			],
+			[
+				"value",
+				"value"
+			],
+			[
+				"ec",
+				"echo\techo \"…\""
+			],
+			[
+				"mysql_fet",
+				"mysql_fetch_assoc"
+			],
+			[
+				"mysql_fe",
+				"mysql_fetch_assoc"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"mysql_f",
+				"mysql_fetch_assoc"
+			],
+			[
+				"html_",
+				"htmlspecialchars_decode"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"magic_q",
+				"get_magic_quotes_gpc"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"menu_",
+				"menu_out"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"mysq",
+				"mysql_error"
+			],
+			[
+				"HTM",
+				"HTM"
+			],
+			[
+				"mysql_num",
+				"mysql_num_rows"
+			],
+			[
+				"mysql_",
+				"mysql_query"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/home/train.loc/www/less/legend.less",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/home/train.loc/www/less/legend.css",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 150.0,
+		"last_filter": "Package Control: ins",
+		"selected_items":
+		[
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 188.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/downloads/repo/snarksliveshere.github.io/css",
+		"/E/downloads/repo/snarksliveshere.github.io/js"
+	],
+	"file_history":
+	[
+		"/D/home/train.loc/www/less/style.less",
+		"/E/downloads/repo/snarksliveshere.github.io/index.html",
+		"/E/downloads/repo/snarksliveshere.github.io/css/style.css",
+		"/D/home/kolinkrai.ru/templates/andiga/index.php",
+		"/D/home/train.loc/www/less/legend.css",
+		"/D/home/kolinkrai.ru/templates/andiga/css/layouts.css",
+		"/C/Users/-/AppData/Roaming/Sublime Text 3/Packages/User/LESS.sublime-settings",
+		"/C/Users/-/AppData/Roaming/Sublime Text 3/Packages/LESS/LESS.sublime-settings",
+		"/F/cools/montserrat-ultra-light/Montserrat-UltraLight.otf",
+		"/E/downloads/repo/snarksliveshere.github.io/waxomrepo.sublime-project",
+		"/D/home/long.loc/www/css/services.css",
+		"/D/home/long.loc/www/css/themes.css",
+		"/D/home/long.loc/www/css/projects.css",
+		"/D/home/long.loc/www/css/gallery.css",
+		"/D/home/long.loc/www/css/style.css",
+		"/D/home/long.loc/www/index.html",
+		"/D/home/long.loc/www/css/briefing.css",
+		"/D/home/cur.loc/www/html5videoaudio.html",
+		"/D/home/new.loc/www/5/style2.css",
+		"/D/home/new.loc/www/5/index2.html",
+		"/D/home/new.loc/www/codepen/justify.css",
+		"/D/home/new.loc/www/codepen/justify.html",
+		"/D/home/new.loc/www/6/index2.html",
+		"/D/home/new.loc/www/6/index3.html",
+		"/E/такле/ДАМПЫ САЙТОВ/сопроводительное",
+		"/E/такле/resume.txt",
+		"/D/home/new.loc/www/5/style.css",
+		"/D/home/new.loc/www/5/index.html",
+		"/D/home/new.loc/www/6/style3.css",
+		"/D/home/new.loc/www/BEM/bem.html",
+		"/D/home/new.loc/www/2/index.html",
+		"/C/Users/-/AppData/Local/Temp/_tc/Hi there, read this..txt",
+		"/D/home/new.loc/www/desire/eq/style.css",
+		"/D/home/new.loc/www/desire/floateq.html",
+		"/D/home/new.loc/www/desire/floateq.css",
+		"/D/home/new.loc/www/desire/eq/index.html",
+		"/D/home/new.loc/www/codepen/column.css",
+		"/D/home/new.loc/www/codepen/column.html",
+		"/D/home/new.loc/www/codepen/link column",
+		"/D/home/new.loc/www/codepen/link column.",
+		"/D/home/new.loc/www/6/style2.css",
+		"/D/home/new.loc/www/codepen/animate.html",
+		"/D/home/new.loc/www/codepen/animate.css",
+		"/C/Users/-/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/C/Users/-/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/C/Users/-/AppData/Roaming/Sublime Text 3/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/D/home/new.loc/www/6/df.html",
+		"/D/home/new.loc/www/6/style.css",
+		"/D/home/new.loc/www/6/index.html",
+		"/D/home/new.loc/www/indextr.html",
+		"/D/home/new.loc/www/css/styletr.css",
+		"/E/такле/ДАМПЫ САЙТОВ/резюме/резюме.txt",
+		"/D/home/new.loc/www/4/style.css",
+		"/D/home/new.loc/www/4/index.html",
+		"/D/home/new.loc/www/3/index.html",
+		"/D/home/new.loc/www/3/style.css",
+		"/D/home/butik.loc/www/index.html",
+		"/D/home/butik.loc/www/css/style.css",
+		"/D/home/new.loc/www/2/table.html",
+		"/C/Users/-/AppData/Local/Temp/_tc/markup_fe2o-master/html_01/readme.md",
+		"/C/Users/-/AppData/Local/Temp/_tc/markup_fe2o-master/more_to_read/readme.md",
+		"/C/Users/-/AppData/Local/Temp/_tc/markup_fe2o-master/html_02/readme.md",
+		"/C/Users/-/AppData/Local/Temp/_tc/markup_fe2o-master/html_03/readme.md",
+		"/C/Users/-/AppData/Local/Temp/_tc/javascript_hw-master/lesson6/README.md",
+		"/D/home/new.loc/www/2/table - копия.html",
+		"/D/home/butik.loc/www/css/reset.css",
+		"/D/home/new.loc/www/2/task1.html",
+		"/D/home/new.loc/www/css/stylecol.css",
+		"/D/home/new.loc/www/indexcol.html",
+		"/D/home/new.loc/www/css/stylegrad.css",
+		"/D/home/new.loc/www/indexgrad.html",
+		"/D/home/new.loc/www/indexbcg.html",
+		"/D/home/new.loc/www/css/stylebcg.css",
+		"/D/home/new.loc/www/css/styleborder.css",
+		"/D/home/new.loc/www/indexborder.html",
+		"/D/home/new.loc/www/css/style.css",
+		"/D/home/new.loc/www/index.html",
+		"/D/home/cur.loc/www/canvas.html",
+		"/D/home/cur.loc/www/geoloc.html",
+		"/D/home/train.loc/www/index.html",
+		"/F/Учиться/web/HTML5CSS3/start.html",
+		"/D/home/cur.loc/www/index.html",
+		"/D/home/oop.loc/www/pract.php",
+		"/D/home/cur.loc/www/html5forms.html",
+		"/D/home/cur.loc/www/css/style.css",
+		"/D/home/cur.loc/www/html5.html",
+		"/D/home/train.loc/www/css/style.css",
+		"/D/home/train.loc/www/css/reset.css",
+		"/D/home/train.loc/www/dopmat/reset.css",
+		"/D/home/oop.loc/www/test.php",
+		"/D/home/cp.loc/www/cake/index.php",
+		"/D/home/oop.loc/www/loops.php",
+		"/D/home/oop.ru/www/views/vedit.php",
+		"/D/home/oop.loc/www/ifelse.php",
+		"/D/home/oop.loc/www/fact.php",
+		"/D/home/oop.ru/www/models/mcreateedit.php",
+		"/D/home/oop.ru/www/config/db.php",
+		"/D/home/oop.ru/www/controllers/ccreateedit.php",
+		"/D/home/oop.ru/www/switch.php",
+		"/D/home/oop.ru/www/views/vlist.php",
+		"/D/home/oop.ru/www/views/v_content.php",
+		"/D/home/oop.ru/www/header.php",
+		"/D/home/oop.ru/www/config/config.php",
+		"/E/такле/ДАМПЫ САЙТОВ/список.txt",
+		"/D/home/oop.ru/www/views/v_menu.php",
+		"/D/home/oop.ru/www/adm/index.php",
+		"/D/home/oop.ru/www/adm/logon.php",
+		"/F/Учиться/web/php oop/php-oop/php-oop-014-sessions-adm_access/www/adm/index.php",
+		"/D/home/oop.ru/www/test/ses2.php",
+		"/D/home/oop.ru/www/test/ses1.php",
+		"/D/home/oop.ru/www/views/vcreate.php",
+		"/D/home/medkrug/css/navigation.css",
+		"/D/home/oop.ru/www/index.php",
+		"/D/home/oop.ru/www/test.php",
+		"/D/home/oop.ru/www/.htaccess",
+		"/D/home/oop.ru/www/models/m_menu.php",
+		"/D/home/oop.ru/www/controllers/c_content.php",
+		"/D/home/oop.ru/www/controllers/c_menu.php",
+		"/D/usr/local/apache/conf/httpd.conf",
+		"/F/Учиться/web/php oop/php-oop/php-oop-010-(postdata-start_adminpanel)/www/controllers/ccreateedit.php",
+		"/F/Учиться/web/php oop/php-oop/php-oop-010-(postdata-start_adminpanel)/www/models/mcreateedit.php",
+		"/D/home/oop.ru/www/quot.php",
+		"/C/Users/-/AppData/Local/Temp/_tc/www/views/vcreate.php",
+		"/C/Users/-/AppData/Local/Temp/_tc/www/adm/index.php",
+		"/D/home/oop.ru/www/css/style.css",
+		"/D/home/oop.ru/www/models/m_content.php",
+		"/D/home/oop.ru/www/config/debug.php",
+		"/F/Учиться/web/php oop/php-oop/php-oop-009-(final_view)/models/mcontent.php"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";\n",
+			"5px",
+			";\n",
+			"red",
+			"}\n",
+			");\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/home/train.loc/www/less/legend.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/home/train.loc/www/less/legend.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "waxomrepo.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
