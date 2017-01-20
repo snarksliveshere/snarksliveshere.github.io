@@ -1,0 +1,101 @@
+
+
+.back {
+margin:0 auto;
+width:970px;
+position:relative;
+
+}
+
+#main {
+        width:970px;
+		/*height:100%;*/
+		/*overflow:auto;*/
+		min-height: 1200px;
+        position: relative;
+        overflow: hidden;
+		margin:92px auto 0  ;
+		background:url(../images/main_bg1.png) 0 36px repeat-y;
+		/*background:url(../images/main_bg.png) repeat-y;	
+        border:1px solid #c4cac8;*/
+		border-bottom:none;
+		z-index:3;	
+		
+	
+		
+}
+#roof{width:970px;
+height:5px;
+background:url(../images/top_menu_bg.png) no-repeat;
+position:absolute;
+z-index:8;
+top:-5px;
+//top:87px;
+}
+*html #main { height: 1200; overflow: visible;} /*--If content is larger than 724px, IE6 will allow the content to break out of its element--*/
+
+#content {
+        float: right;
+        width: 729px;
+        margin: 0 34px 0 0;
+        /*outline:1px solid green;*/
+		
+}
+#naturemort{
+	width:709px;
+	/*height:274px;*/
+	float:left;
+	background:url(../images/naturemort.jpg);
+	padding-top:4px;
+	padding-left:20px;
+	/*border-left:1px solid #deedcc;*/
+	margin-left:-2px;
+	/*outline:1px solid red;*/
+}
+#panno {
+	width:722px;
+	padding-top:10px;
+	margin-top:10px;
+	margin-left:6px;
+	background:#fff;
+	float:left;
+	
+	
+}
+#header {
+        width:630px;
+		height:140px;
+		position: absolute;
+        top: -92px; 
+		//top:-5px;
+		right:0;
+		z-index:2;	
+		background:url(../images/header_bg2.jpg)  no-repeat;
+		padding-left:30px;
+		
+}
+
+#sidecol {
+        width: 204px;
+        position: absolute;
+        top: 36px; left: 0;
+		/*height:400px;*/
+		/*outline:2px solid #ffffff;*/
+		z-index:4;
+}
+#side_bg {height:278px; width:192px; background:url(../images/naturemort.jpg) ; margin-left:13px;}
+#footer {
+        height:113px;
+		/*background:url(../images/main_bg.png) repeat-y;	
+		border:1px solid #c4cac8;
+		border-top:none;*/
+		background:url(../images/footer_bg2.png) no-repeat;
+		margin:0 auto 110px;
+        width: 970px;
+		
+		padding-top:10px;
+		z-index:3;
+		position:relative;
+		clear:both;
+}
+

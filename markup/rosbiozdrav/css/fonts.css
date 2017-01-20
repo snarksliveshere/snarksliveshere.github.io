@@ -1,0 +1,79 @@
+
+
+/*humanity  */
+#wrap_article {width:650px; margin:27px 0 70px 35px;}
+#wrap_article h3 {font-size:15px; color:#0a9167; font-weight:bold;}
+#wrap_article h4 {font-size:12px; color:#000; font-weight:bold; margin-top:10px;}
+#wrap_article p {font-size:12px;margin-top:20px;}
+
+/* side col news*/
+#news p {font-weight:bold;}
+#news a {line-height:12px;margin-bottom:10px;display:block;}
+#news a span {font-weight:bold;}
+#news p, #news a, #news a span {font-size:12px; color:#000;}
+.publish {
+	font-size:13px;
+	color:#09c185;
+	float:left;
+	margin-left:53px;
+	
+	
+}
+.cot_second a, .cot_second p, .cot_second span {margin-left:18px;
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+.cot_second p {
+	color:#4c504c;
+	
+}
+.p_gift {font-size:11px;}
+.cot_second span {
+	color:#4c504c;
+	display:block;	
+}			
+.cot_second a {
+	text-decoration:underline;
+	color:#378d42;
+	display:block;
+	margin-top:15px;
+	margin-bottom:15px;
+	
+}
+
+.cot_second a.noMarginTop{
+	margin-top:0;
+	margin-bottom:0;
+}
+.cot_second span a {
+	color:#4c504c;
+	margin:0;
+	font-weight:bold;
+	text-decoration:none;
+}
+.cot_third * {
+	color:#4c504c;
+	}
+.cot_third div span {font-size:20px; font-weight:bold; font-size:12px;}
+.cot_third div.discount {color:#e7052a;  margin-top:8px; margin-bottom:18px;}
+.cot_third div.discount span {color:#e7052a;}
+.cot_third p{text-align:center;}
+
+
+
+
+
+
+
+
+#fm_type { margin-left:230px; margin-top:15px;}
+#fm_type span { font-size:15px; font-weight:bold;}
+
+
+
+
+
+
+
+
+

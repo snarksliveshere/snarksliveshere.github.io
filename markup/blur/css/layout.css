@@ -1,0 +1,134 @@
+#wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	background:url(../images/pattern.jpg);
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+	height: 234px;
+	background: url(../images/head_back1.jpg) no-repeat;
+	
+	position:relative;
+}
+#header_link {
+width:278px;
+height:155px;
+position:absolute;
+top:25px;
+left:480px;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#middle {
+	width: 100%;
+	height: 1%;
+	position: relative;
+}
+#middle:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+#container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	padding-bottom:100px;
+	background:url(../images/ghost.png) 375px 9px no-repeat;
+}
+#content {
+	padding: 0 0 0 445px;
+}
+
+#wrap_box {
+width:515px;
+background:url(../images/box_top.png) no-repeat;
+padding-top:25px;
+margin-left:-4px;
+}
+#box {
+height:100%;
+background:url(../images/box_bottom.png) center bottom no-repeat;
+min-height:192px;
+padding-bottom:15px;
+}
+#type_box {
+width:260px;
+margin-left:27px;
+}
+#fly {
+position:absolute;
+width:235px;
+height:279px;
+right:250px;
+top:-40px;
+}
+#image_n_frame {
+position:relative;
+margin-left:15px;
+margin-top:30px;
+}
+#frame {
+background:url(../images/frame.png) no-repeat;
+position:absolute;
+width:235px;
+height:279px;
+z-index:3;
+top:15px;
+}
+.news {
+border-bottom:1px solid #759772;
+padding:0 6px 3px 11px;
+width:478px;
+float:left;
+margin-top:40px;
+}
+.rectangle {
+width:483px;
+padding:18px 6px;
+border-top:1px solid #95b188;
+float:left;
+}
+.first {
+border-top:none;
+}
+.image_n_rect {
+width:110px;
+border:1px solid #3c573a;
+float:left;
+font-size:0;
+}
+.text_n_rect {
+width:350px;
+padding-top:12px;
+float:left;
+margin-left:13px;
+}
+
+/* Sidebar Left
+-----------------------------------------------------------------------------*/
+#sideLeft {
+	float: left;
+	width: 425px;
+	margin-left: -100%;
+	position: relative;
+	}
+
+#float_wrap {
+width:180px;
+float:right;
+padding-right:5px;
+text-align:right;
+}
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	height: 4px;
+	background:#6d9d67;
+	clear:both;
+}

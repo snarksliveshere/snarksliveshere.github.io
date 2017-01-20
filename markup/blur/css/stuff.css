@@ -1,0 +1,82 @@
+/*    type    */
+.sidebar #float_wrap h3 {
+font-size:18px;
+font-weight:400;
+margin:30px 0 11px 0;
+display:block;
+}
+
+#sideLeft .sanctu {
+float:right;
+margin-bottom:20px;
+
+}
+.sanctu a {
+float:left;
+margin-left:10px;
+}
+.smaller_text {
+font-size:11px;
+color:#30462f;
+}
+
+.linkit {
+text-decoration:underline;
+color:#30462f;
+font-size:11px;
+}
+#type_box .linkit {
+font-weight:bold; 
+font-size:14px;
+color:#3c573a;
+}
+#type_box h3 {
+font-size:24px;
+font-weight:400;
+word-spacing:0.02px;
+line-height:1.2em;
+}
+
+#type_box p {
+color:#4f724c;
+margin-top:12px;
+margin-bottom:16px;
+width:250px;
+}
+
+.text_n_rect .hd {
+color:#30462f;
+font-size:14px;
+font-weight:bold;
+}
+.date {
+color:#30462f;
+font-style:italic;
+}
+.text_n_rect p {
+color:#30462f;
+margin-top:14px;
+}
+
+.news h3 {
+font-size:24px;
+float:left;
+}
+.news a {
+float:right;
+text-decoration:underline;
+color:#2e586d;
+font-size:11px;
+height:17px;
+background:url(../images/rss.png) no-repeat;
+text-indent:19px;
+margin-top:5px;
+}
+
+
+
+
+
+
+
+

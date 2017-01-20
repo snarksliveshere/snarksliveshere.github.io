@@ -1,0 +1,29 @@
+/*     main navigation    */
+#nav {
+float:right;
+
+}
+#nav li a span {
+color:#3c573a;
+font-size:18px;
+}
+#nav li {
+height:57px;
+background:url(../images/right_nav.png) top right no-repeat;
+padding-right:18px;
+}
+
+#nav li a  {
+height:37px;
+padding-top:20px;
+background:url(../images/left_nav.png)  no-repeat;
+display:block;
+text-indent:21px;
+float:right;
+}
+body.home #nav li.home  {
+background:url(../images/right_nav_act.png) top right no-repeat;
+}
+body.home #nav li.home a  {
+background:url(../images/left_nav_act.png)  no-repeat;
+}

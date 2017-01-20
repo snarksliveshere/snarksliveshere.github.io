@@ -1,0 +1,36 @@
+@import url(layout.css);
+@import url(navigation.css);
+@import url(stuff.css);
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 12px/18px Georgia, Tahoma, Verdana, sans-serif;
+	width: 100%;
+	background: #b5d2ae; 
+	color:#3c573a;
+}
+a {
+	outline: none;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	border: none;
+}
+input {
+	vertical-align: middle;
+}
+ul, li, a {
+display:block;
+}
+ul {
+list-style-type:none;
+}
+.clear {
+clear:both;
+}
