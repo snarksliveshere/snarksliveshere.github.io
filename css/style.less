@@ -1,18 +1,18 @@
 @import (reference) "legend.less";
-/*@import url(http://allfont.net/allfont.css?fonts=montserrat-light);*/
 @import "services.less";
 @import "themes.less";
 @import "projects.less";
 @import "gallery.less";
 @import "statistics.less";
 @import "posts.less";
-@import "briefing.less"; /* только пока для удобства - потом перенести в <link>*/
+@import "briefing.less"; 
 
 
 html, body{ 
 	margin: 0; 
 	padding:0;
-	
+	width:100%;
+	background: @backcolor;
 	
 	
 } 
@@ -30,7 +30,7 @@ a{
 }
 body {
 	.m_ml_300-14(@graycolor1);
-
+	
 }
 h1{
 	margin:0;
@@ -46,14 +46,16 @@ h1{
 
 .wrap-header{
 	min-height:1024px;
-	background: #454442 url("@{images}header_bg.jpg") top center no-repeat;
+	
+	/*background: #454442 url("@{images}header_bg.jpg") top center no-repeat;*/
+	background: @backcolor url("@{images}header_bg.jpg") top center no-repeat;
 	/*width: 100%;*/
+
 	}
 .header{
-	width:1170px;
-	margin:0 auto;
 	padding:40px 0;
 	height:944px;
+
 		&__logo-link{
 			.logo();
 		}
