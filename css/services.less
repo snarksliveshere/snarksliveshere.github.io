@@ -1,0 +1,43 @@
+.wrap-services{
+	background: @white;
+}
+.services{
+		padding:80px 0;
+	
+	&__item{
+		display: inline-block;
+		width:240px;
+		padding: 0 30px 0 0;
+		text-align: center;
+		vertical-align: top;
+		&:last-child{
+			padding-right:0;
+			width: 270px;
+		}
+	}
+	&__link{
+		font-weight:600;
+		font-size:22px;
+		color:@darkcolor1;
+		vertical-align: bottom;
+		padding-top:70px;
+		display: inline-block;
+		&:hover{
+			color:@lightcolor1;
+		}
+		&_pencil{
+			background: url("@{images}serv_pencil.png") top center no-repeat;
+		}
+		&_book{
+			background: url("@{images}serv_book.png") top center no-repeat;
+		}
+		&_load{
+			background: url("@{images}serv_load.png") top center no-repeat;
+		}
+		&_case{
+			background: url("@{images}serv_case.png") top center no-repeat;
+		} 
+	}
+}
+
+

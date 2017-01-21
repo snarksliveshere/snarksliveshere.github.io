@@ -1,0 +1,88 @@
+/*<div class="projects">	
+		<div class="project-table">
+			<h3 class="project-table__title">Our latest project</h3>
+			<p class="project-table__description"></p>
+			<ul class="project-table__nav">
+				<li class="project-table__nav-item"><a href="" class="project-table__nav-link">All</a></li>
+				<li class="project-table__nav-item"><a href="" class="project-table__nav-link">Web design</a></li>
+				<li class="project-table__nav-item"><a href="" class="project-table__nav-link">Mobile app</a></li>
+				<li class="project-table__nav-item"><a href="" class="project-table__nav-link">Illustration</a></li>
+				<li class="project-table__nav-item"><a href="" class="project-table__nav-link">Photography</a></li>
+			</ul>
+		</div>
+	</div>	*/
+.wrap-projects{
+	background: @white;
+}
+/*  
+    ПОДПРАВИТЬ СЕМАНТИКУ - заменить project-table на projects!     */
+    /*
+.projects{
+	width:770px;
+	padding:80px 200px 10px;
+	text-align:center;
+	margin:0 auto;
+}*/
+.projects{
+	width:770px;
+	padding:80px 200px 10px;
+	text-align:center;
+	margin:0 auto;
+	&__title{
+		.m_head-title();
+	}
+	&__description{
+		font-size:16px;
+	}
+	&__nav{
+		padding-top:40px;
+		&-item{
+			display: inline-block;
+			margin-left:10px;
+		}
+		&-link{
+			color:@graycolor1;
+			padding: 10px 17px;
+			border:1px solid #ebebeb;
+			border-radius: 3px;
+			&:first-child{
+				padding:10px 25px;
+			}
+			&:hover{
+				color:@white;
+				background: @graycolor4;
+			}
+		}
+	}
+}
+/*	
+.project-table__title{
+	.m_head-title();
+}
+.project-table__description{
+	font-size: 16px;
+}
+/* navigation*/
+/*.project-table__nav{
+	padding-top:40px;
+	
+}
+.project-table__nav-item{
+	display: inline-block;
+	margin-left:10px;
+}
+.project-table__nav-link:first-child{
+	padding:10px 25px;
+}
+.project-table__nav-link{
+	color:#9b9b9b;
+	
+	padding: 10px 17px;
+	border:1px solid #ebebeb;
+	border-radius: 3px;
+}
+.project-table__nav-link:hover{
+	color:#fff;
+	background: #998675;
+}
+*/

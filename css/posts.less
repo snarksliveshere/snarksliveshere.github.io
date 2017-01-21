@@ -1,0 +1,113 @@
+/* posts*/
+.wrap-post{
+	background: @white;
+}
+.post{
+	&__header{
+		text-align: center;
+		width: 750px;
+		margin:0 auto;	
+	}
+	&__title{
+		.m_head-title();
+	}
+	&__description{
+		font-size: 16px;
+	}
+	&-photo{
+			text-align: justify;
+			position:relative;
+			padding-bottom: 140px;
+			&:after{
+				content: "";
+				width:100%;
+				display: inline-block;
+			}
+		&__item{
+			position: relative;
+			display: inline-block;
+			width: 370px;
+
+		}
+		/*&__text{
+			width:370px;
+		}*/
+		&__description{
+			display: inline-block;
+			margin: 0 0 25px 0;
+			
+		}
+		&__date{
+			position:absolute;
+			display: inline-block;
+			top:0;
+			left:0;
+			border-radius: 3px;
+			&-day{
+				font-size:24px;
+				color:@white;
+				background:@graycolor6;
+				padding: 10px;
+				border-top-left-radius: 3px;
+				border-top-right-radius: 3px;
+			}
+			&-month{
+				color:@darkcolor6;
+				font:400 12px Roboto;
+				background:@darkcolor6;
+				color:@white;
+				padding: 10px;
+				border-bottom-left-radius: 3px;
+				border-bottom-right-radius: 3px;
+			}
+		}
+		&__title{
+			color:@darkcolor1;
+			/*font:500 20px Raleway , sans-serif;*/
+			.ralew(500, 20px);
+		}
+		&__link{
+			position: relative;
+			color:@lightcolor1;
+			&:after{
+				content:'';
+				border:5px solid transparent;
+				border-left:5px solid @lightcolor1;
+				position: absolute;
+				top:5px;
+				right: -15px;
+			}
+		}
+		&__buttons{
+			text-align: center;
+			font-size: 24px;
+			
+			margin:0 auto;
+			color:@lightcolor1;
+			left:0;
+			right:0;
+			position:absolute;
+			bottom:80px;
+			width:54px;
+			
+
+			a{
+				border-radius: 100%;
+				background: -webkit-radial-gradient(circle closest-side,rgba(0,0,0,0) 100%, #d3c1ad 100% );
+				background: radial-gradient(circle closest-side,rgba(0,0,0,0) 80%, #d3c1ad 100% );
+				display: inline-block;
+				width:22px;
+				height: 22px;
+				vertical-align: top;
+				line-height: 0.8;
+				font-weight: 500;
+				&:hover{
+					background: radial-gradient(circle closest-side,rgba(0,0,0,0) 80%, #d4d4d4 100% );
+					cursor: pointer;
+					color:@lightcolor2;
+				}
+			}
+		}
+
+	}
+}

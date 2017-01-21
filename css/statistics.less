@@ -1,0 +1,56 @@
+/* STATISTICS*/
+.wrap-statistics{
+	.grad();
+	width:100%;
+}
+.statistics{
+	padding:70px 120px;
+
+	text-align: justify;
+	&:after{
+		content:"";
+		width:100%;
+		display: inline-block;
+	}
+	&__item{
+		display: inline-block;
+		width: 15%;
+		text-align: center;
+	}
+	&__text{
+		color:@lightcolor1;
+	}
+	&__link{
+
+		padding-top:60px;
+		color:@white;	
+		display: inline-block;
+		font-size: 48px;
+		font-family: 'Montserrat Hairline' , sans-serif;
+		font-weight: 200;
+		position: relative;
+		&:after{
+			content:'';
+			display: block;
+			background: #fff;
+			height:2px;
+			width:30px;
+			position: absolute;
+			left:35%;
+			bottom:-40%;
+		}
+		&_client{
+			background: url("@{images}serv_client.png") center top no-repeat;
+		}
+		&_cofe{
+			background: url("@{images}serv_cofe.png") center top no-repeat;
+		}
+		&_comment{
+			background: url("@{images}serv_comment.png") center top no-repeat;
+		}
+		&_heart{
+			background: url("@{images}serv_heart.png") center top no-repeat;
+		}
+
+	}
+}	

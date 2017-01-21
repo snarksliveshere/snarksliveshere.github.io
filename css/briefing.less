@@ -1,0 +1,129 @@
+.wrap-briefing{
+	background:@darkcolor3;
+	min-height: 350px;
+	padding-bottom: 80px;
+}
+.briefing {
+	padding-top: 80px;
+
+	&__company{
+		display: inline-block;
+		width:20%;
+		vertical-align: top;
+		padding-right: 30px;
+		text-align: justify;
+		position: relative;
+		&-link{
+			.logo();
+				
+			position: relative;
+			display: block;
+			top:-20px;
+
+		}
+		&-description{
+			/*padding-top: 20px;*/
+			color:@darkcolor1;
+		}
+		&-readmore{
+			color:@lightcolor2;
+			font-weight: 400;
+			padding-right:7px;
+			position: relative;
+			&:after{
+				content:'';
+				border:5px solid transparent;
+				border-left:5px solid @lightcolor2;
+				position: absolute;
+				top:5px;
+				right: -15px;
+			}
+		}
+	}
+	
+	&__posts{
+		display: inline-block;
+		width:20%;
+		vertical-align: top;
+		padding-right: 30px;
+		text-align: justify;
+		&-title{
+			.m_foot-title();
+			margin-top:0;
+		}
+		&-item{
+			border-bottom: 1px solid @darkcolor6;
+			padding: 20px 0;
+			&:nth-child(odd){
+				.briefing__posts-date{
+					color:@white;
+				}
+				.briefing__posts-description{
+					color:@lightcolor1;
+				}
+			}
+		}
+		&-date{
+			font-size: 12px;
+			color:@graycolor6;
+			margin:0;
+		}
+		&-description{
+			color:@darkcolor1;
+			margin:0;
+		}
+	}
+	&__network{
+		display: inline-block;
+		width:20%;
+		vertical-align: top;
+		padding-right: 30px;
+		text-align: justify;
+		&-title{
+			.m_foot-title();
+			margin-top:0;
+		}
+		&-item{
+			border-bottom: 1px solid @darkcolor6;
+			padding: 20px 0;
+		}
+		&-description{
+			color:@darkcolor1;
+			margin-top: 0;
+		}
+		&-link{
+			color:@blue;
+			&-out{
+				color:@graycolor3;
+			}
+		}
+		&-timing{
+			font-size: 12px;
+			color: @graycolor6;
+			margin:0;
+		}
+	}
+	&__widget{
+		width:270px;
+		display: inline-block;
+		vertical-align: top;
+		
+		text-align: justify;
+		&:after{
+			display: inline-block;
+			width: 100%;
+			content: "";
+			text-align: justify;
+		}
+		&-title{
+			.m_foot-title();
+			margin-top:0;
+		}
+			
+		&-item{
+			display: inline-block;
+			margin-top: 10px;
+			width: 130px;
+		}
+	}
+}

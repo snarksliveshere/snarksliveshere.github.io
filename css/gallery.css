@@ -1,16 +1,51 @@
-.project-gallery{
-	text-align: justify;
-		
-
-
+.wrap-gallery{
+	background: @white;
 }
-.project-gallery::after {
+.gallery{
+	text-align: justify;
+	&:after{
+		display: inline-block;
+		width: 100%;
+		content: "";
+		text-align: justify;
+	}
+	&__item{
+		display: inline-block;
+		text-align: justify;
+		position: relative;
+		background: #fbfaf8;
+		padding-bottom: 30px;
+		width: 370px;
+		margin-top:30px;
+	}
+	&__paranja{
+		display: none;
+		position:absolute;
+	}
+	&__photo-title{
+		font-weight:500;
+		font-size: 20px;
+		color:@lightcolor1;
+		text-transform: capitalize;
+		padding:30px 0 0 30px;
+		position: relative;
+		margin:0;
+		&:before{
+			content: ''; 
+		    position: absolute;
+		    left: 20px; top: -35px;
+		    border: 20px solid transparent;
+		    border-bottom: 15px solid #fbfaf8;
+		}
+	}
+}
+.gallery::after {
   display: inline-block;
   width: 100%;
   content: "";
   text-align: justify;
 }
-.project-gallery__item{
+.gallery__item{
 	display: inline-block;
 	text-align: justify;
 	position: relative;
@@ -21,15 +56,13 @@
 	}
 
 
-.project-gallery__img{
-		vertical-align:bottom;
-}
-.project-gallery__paranja{
+
+.gallery__paranja{
 	display: none;
 	position:absolute;
 }
 
-.project-gallery__photo-title{
+.gallery__photo-title{
 	font-weight:500;
 	font-size: 20px;
 	color: #c7b299;
@@ -38,16 +71,16 @@
 	position: relative;
 	margin:0;
 }
-.project-gallery__photo-title::before {
+.gallery__photo-title::before {
     content: ''; 
     position: absolute;
     left: 20px; top: -35px;
     border: 20px solid transparent;
-    border-bottom: 15px solid #fbfaf8;*/
+    border-bottom: 15px solid #fbfaf8;
     
     
    }
-.project-gallery__description{
+.gallery__description{
 	padding-left:30px;
 	color: #dcdcdb;
 }
@@ -72,16 +105,16 @@
 .posts_description{
 	margin-bottom: 0;
 }
-.project-gallery__date {
+.gallery__date {
 	position:absolute;
 	display: inline-block;
 	top:0;
 
 }
-.project-gallery__title{
+.gallery__title{
 	padding-left:30px;
 }
-.project-gallery__photo-title_post{
+.gallery__photo-title_post{
 	font-size: 14px;
 	color: #c7b299;
 	position: relative;
@@ -89,7 +122,7 @@
 
 }
 
-.project-gallery__photo-title_post::after{
+.gallery__photo-title_post::after{
 	content:'';
 	border:5px solid transparent;
 	border-left:5px solid #c7b299;

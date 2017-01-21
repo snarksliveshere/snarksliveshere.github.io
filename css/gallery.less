@@ -1,0 +1,64 @@
+.gallery{
+	text-align: justify;
+	position: relative;
+	padding-bottom:170px;
+	&:after{
+		display: inline-block;
+		width: 100%;
+		content: "";
+		text-align: justify;
+	}
+	&__item{
+		display: inline-block;
+		text-align: justify;
+		position: relative;
+		background: #fbfaf8;
+		padding-bottom: 30px;
+		width: 370px;
+		margin-top:30px;
+	}
+	&__paranja{
+		display: none;
+		position:absolute;
+	}
+	&__photo-title{
+		font-weight:500;
+		font-size: 20px;
+		color:@lightcolor1;
+		text-transform: capitalize;
+		padding:30px 0 0 30px;
+		position: relative;
+		margin:0;
+		&:before{
+			content: ''; 
+		    position: absolute;
+		    left: 20px; top: -35px;
+		    border: 20px solid transparent;
+		    border-bottom: 15px solid @whiting;
+		}
+	}
+	&__description{
+		padding-left:30px;
+		color:@lightcolor2;
+	}
+	&__button{
+		.similar-button();
+		width:170px;
+		position: absolute;
+		left:0;
+		right:0;
+		margin:0 auto;
+		bottom:80px;
+		
+
+
+		
+
+
+	}
+}
+
+
+
+
+

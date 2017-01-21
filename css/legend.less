@@ -1,0 +1,78 @@
+/*  IMAGES FOLDER*/
+@images: '../images/';
+/*FONTS COLOR */
+@lightcolor1:#c7b299;
+@lightcolor2:#d1d1d1;
+@darkcolor1:#555; 
+@darkcolor2:#363636;
+@graycolor1:#8c8c8c;
+
+/* Other color */
+
+@darkcolor3:#191919;
+@darkcolor4:#111111;
+@darkcolor5:#362f2d;
+@darkcolor6:#252525;
+@graycolor2:#615855;
+@graycolor3:#959595;
+@graycolor4:#998675;
+@graycolor5:#a48d72;
+@graycolor6:#363636;
+@blue:#00bff3;
+@whiting:#fbfaf8;
+@white:#fff;
+@black:#000;
+
+.m_head-title(){
+	font:600 30px Raleway, sans-serif;
+	color:@darkcolor1;
+	text-transform: capitalize;
+	padding:80px auto 30px;
+	text-align: center;
+}
+.m_foot-title(){
+	font:700 24px Raleway, sans-serif;
+	color:@white;
+}
+/*  type styles*/
+.m_ml_300-12(@color){
+	font:300 12px 'Montserrat light', sans-serif;
+	color:@color;
+}
+.m_ml_300-14(@color){
+	font:300 14px  'Montserrat Light', sans-serif;
+	color:@color;	
+}
+.m_ml_300-16(@color){
+	font:300 16px 'Montserrat Light', sans-serif;
+	color:@color;
+}
+.similar-button(){
+	background: @graycolor4;
+	color:@white;
+	font:800 14px Raleway, sans-serif ;
+	padding:20px 35px;
+	border:none;
+	border-bottom:3px solid #736357;
+	border-radius: 3px;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+.grad(){
+	background: #221c1a;
+	background: linear-gradient(to right, #221c1a, #4e3427 );
+}
+.ralew(@weight; @size; @family:Raleway, sans-serif){
+	font:@arguments;
+} /* почему-то не срабатывает*/
+
+.logo(){
+	background: url(../images/logo_images.png)  no-repeat;
+	font-weight:400;
+	color:#fff;
+	font-size: 34px;
+	vertical-align: top;
+	width: 118px;
+	padding:10px 0 5px 64px;
+}

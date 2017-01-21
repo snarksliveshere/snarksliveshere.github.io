@@ -4,19 +4,19 @@
 @import url('themes.css');
 @import url('projects.css');
 @import url('gallery.css');
-@import url('briefing.css');
+@import url('briefing.css'); /* только пока для удобства - потом перенести в <link>*/
 
 /*
     font-family: 'Roboto', sans-serif; 400
 
 	font-family: 'Raleway', sans-serif; 300,400,500,600,700,800
 	font-family: 'Montserrat Light', arial; Montserrat-UltraLight
-*/
+*//*
 @font-face {
     font-family: 'Montserrat UltraLight'; /* Имя шрифта */
-    src: url(fonts/Montserrat-UltraLight.otf); /* Путь к файлу со шрифтом */
-   }
-
+  /*  src: url(fonts/Montserrat-UltraLight.otf); /* Путь к файлу со шрифтом */
+   /*}  лучше через link и посмотреть не заменит ли montserrat- hairline
+*/
 html, body{ margin: 0; 
 	padding:0;
 } 
@@ -24,12 +24,12 @@ img {
 	border:none;
 }
 ul {margin: 0;
- padding: 0;
-list-style: none;
+ 	padding: 0;
+	list-style: none;
 }
 a{
 	text-decoration: none;
-
+	color:#fff;
 }
 body {
 	font-family:Raleway, sans-serif;
@@ -63,7 +63,7 @@ h1{
 	height:944px;
 	/*/position: relative;*/
 }
-.logo-link {
+.header__logo-link {
 	background: url(../images/logo_images.png)  no-repeat;
 	/*font-family: 'Montserrat Light', sans-serif;*/
 	font-weight:400;

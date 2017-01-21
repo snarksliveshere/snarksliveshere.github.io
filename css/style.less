@@ -1,0 +1,282 @@
+@import (reference) "legend.less";
+/*@import url(http://allfont.net/allfont.css?fonts=montserrat-light);*/
+@import "services.less";
+@import "themes.less";
+@import "projects.less";
+@import "gallery.less";
+@import "statistics.less";
+@import "posts.less";
+@import "briefing.less"; /* только пока для удобства - потом перенести в <link>*/
+
+
+html, body{ 
+	margin: 0; 
+	padding:0;
+	
+	
+	
+} 
+img {
+	border:none;
+	vertical-align: bottom;
+}
+ul {margin: 0;
+ 	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:@white;
+}
+body {
+	.m_ml_300-14(@graycolor1);
+
+}
+h1{
+	margin:0;
+	padding: 0;
+}
+
+.layout{
+	width:1170px;
+	margin:0 auto;
+	position: relative;
+}
+/* HEADER */
+
+.wrap-header{
+	min-height:1024px;
+	background: #454442 url("@{images}header_bg.jpg") top center no-repeat;
+	/*width: 100%;*/
+	}
+.header{
+	width:1170px;
+	margin:0 auto;
+	padding:40px 0;
+	height:944px;
+		&__logo-link{
+			.logo();
+		}
+		&__nav{
+			float:right;
+			overflow: hidden;
+			margin-top:10px;
+			
+		}		
+		&__search{
+			display: inline-block;
+			height:24px;
+			vertical-align: top;
+			padding-left: 20px;
+			&-item{
+				display: inline-block;
+				
+				margin-left:30px;
+			}
+		}
+		
+		&__menu{
+				display: inline-block;
+				vertical-align: middle;
+			&-item{
+				display: inline-block;
+				text-align: center;
+				margin-left: 30px;	
+			}
+			&-link{
+				font-weight: 400;
+				&:hover{
+					color:@lightcolor1;
+				}
+			}
+		}
+		&__text{
+			margin:0 auto;
+			margin-top: 287px;
+			color:@white;
+			width:600px;
+			text-align: center;
+			&-prologue{
+				font-size: 26px;
+				font:500 26px Raleway,sans-serif;
+				margin-bottom:15px;	
+			}
+			&-inscription{
+				font:800 36px Raleway, sans-serif;
+			}
+			&-description{
+				margin:10px 0 50px 0 ;
+				font-weight: 300;
+			}
+			&-button{
+				.similar-button();
+			}
+		}
+		&__listing{
+			text-align: center;
+			margin-top:350px;
+			&-item{
+				display: inline-block;
+				width:12px;
+				height:12px;
+				background: #8e8f91;
+				border-radius: 100%;
+				margin-left:12px;
+				color:@graycolor1;
+				&:hover{
+					width:16px;height:16px;
+					background: -webkit-radial-gradient(circle closest-side,rgba(0,0,0,0) 60%, #d3c1ad 100% );
+					background: radial-gradient(circle closest-side,rgba(0,0,0,1) 60%, #d3c1ad 80% );
+					cursor:pointer;
+					vertical-align: top;
+				}
+			}
+		}
+	
+}
+
+
+/*END HEADER*/
+
+/* video*/
+.video{
+	text-align: center;
+	background: #30363c;
+	overflow-x:hidden;
+}
+
+/*  MOBILE-COMPARE */
+.wrap-mobile-compare{
+	background: @whiting;
+}
+.mobile-compare {
+	text-align: right;
+	background: url("@{images}mobile.jpg") 0 100% no-repeat;
+	min-height:620px;
+	&__info{
+		margin-top:200px;
+		text-align: left;
+		display: inline-block;
+		width: 650px;	
+	}
+	&__title{
+		.m_head-title();
+				
+	}
+	&__description{
+		font-size: 16px;
+		text-align: justify;
+		margin-bottom: 30px;
+	}
+	&__list{
+		padding-left:100px;
+	}
+	&__item{
+		font-size: 16px;
+		position: relative;
+		margin-bottom: 10px;
+		&:before{
+			position: absolute;
+			content:'\203A';
+			border-radius: 100%;
+			background: #c7b299;
+			font-weight: 700;
+			color:#fff;
+			left:-50px;
+			font-size: 20px;
+			line-height: 0.8;
+			vertical-align: middle;
+			display: block;
+			width:20px;
+			height: 20px;
+			text-indent:7px;	
+		}
+	}
+
+}
+
+/* rewards*/
+.rewards{
+	background:#3c3432 url("@{images}rewards_bg.jpg") top center no-repeat;
+	min-height: 489px;
+	&__wrap{
+		text-align: center;
+		padding:140px 30px;
+		vertical-align: bottom;
+	}
+	&__item{
+		display: inline-block;
+		margin-right:90px;
+		vertical-align: middle;
+		&:last-child{
+			margin-right:0;
+		}
+	}
+}
+
+/* footer*/
+
+.wrap-footer{
+	background:@darkcolor4;
+	height: 110px;
+	position:relative;
+	color:@darkcolor1;
+}
+
+.copyright, .created,  .footer__stuff, .footer__nav-item {
+	display: inline-block;
+	vertical-align: middle;
+
+}
+.copyright{
+	&:before{
+		content:'';
+	    display: inline-block;
+	    height: 110px;
+	    vertical-align: middle;
+	    margin-right: -0.25em;
+	}
+	&__link{
+		color:@graycolor3;
+		padding-right: 15px;
+		font-size:13px;
+	}
+}
+
+.footer__nav{
+	&-link{
+		color:@darkcolor1;
+	}
+	&-item{
+		border-left:1px solid #252525;
+		padding-left:10px;	
+		&:nth-child(even){
+
+				color:@lightcolor1;
+				text-transform: uppercase;
+		}
+	}
+
+}
+
+.footer__created {
+	position:absolute;
+	right:0;
+	top:50px;
+	&-desc{
+		padding-left:15px;
+		border-left:1px solid #252525;
+	}
+	&-link{
+		color:@graycolor3;
+		&:first-child{
+			padding-right:15px;
+		}
+	}
+}
+
+
+
+
+
+

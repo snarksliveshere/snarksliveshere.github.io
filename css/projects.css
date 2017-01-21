@@ -1,17 +1,3 @@
-/*<div class="projects">	
-		<div class="project-table">
-			<h3 class="project-table__title">Our latest project</h3>
-			<p class="project-table__description"></p>
-			<ul class="project-table__nav">
-				<li class="project-table__nav-item"><a href="" class="project-table__nav-link">All</a></li>
-				<li class="project-table__nav-item"><a href="" class="project-table__nav-link">Web design</a></li>
-				<li class="project-table__nav-item"><a href="" class="project-table__nav-link">Mobile app</a></li>
-				<li class="project-table__nav-item"><a href="" class="project-table__nav-link">Illustration</a></li>
-				<li class="project-table__nav-item"><a href="" class="project-table__nav-link">Photography</a></li>
-			</ul>
-		</div>
-	</div>	*/
-
 .projects{
 	width:770px;
 	padding:80px 200px 10px;

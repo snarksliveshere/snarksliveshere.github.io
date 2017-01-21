@@ -2,14 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<script type="text/javascript" src="js/less.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet/less" type="text/css" href="css/legend.less" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800|Roboto" rel="stylesheet"> 
 	<title>Document</title>
 </head>
 <body>
-<div class="wrap"> 
+<div class="wrap">
 	<!-- UP BLOCK -->
 	<div class="wrap-header">
 		<div class="header layout">
