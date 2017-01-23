@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"array_s",
+				"array_slice"
+			],
+			[
+				"arrayr",
+				"array_reverse"
+			],
+			[
+				"for",
+				"for\tfor …"
+			],
+			[
 				"paddin",
 				"padding-left"
 			],
@@ -224,10 +236,6 @@
 				"get_magic_quotes_gpc"
 			],
 			[
-				"for",
-				"foreach\tforeach …"
-			],
-			[
 				"menu_",
 				"menu_out"
 			],
@@ -256,28 +264,68 @@
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"file": "/D/home/oop.loc/www/pal.php",
 			"settings":
 			{
-				"buffer_size": 19342,
+				"buffer_size": 1316,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "css/style.less",
+			"file": "/D/home/train.loc/www/javascript/index.html",
 			"settings":
 			{
-				"buffer_size": 4387,
-				"encoding": "UTF-8",
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "css/legend.less",
+			"contents": "<?php \ninclude_once(\"config/db.php\");\n?>",
+			"file": "/D/home/oop.ru/www/home.php",
+			"file_size": 42,
+			"file_write_time": 131281745019549527,
 			"settings":
 			{
-				"buffer_size": 1544,
+				"buffer_size": 40,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<?php \n\t// swith - замена if\n\n$a =3;\n\nswitch($a){\n\tcase 1:\n\techo 'a = 1';\n\techo ' - а равно единице' ;\n\tbreak;\n\tcase 2:\n\techo 'a = 2';\n\techo ' - а равно 2' ;\n\tbreak;\n\tcase 3:\n\techo 'a = 3';\n\techo ' - а равно 3' ; \n\t//break; // если нет break, даже если совпадают, идем до default - т.е. выводит и case 4.\n\tcase 4:\n\techo 'a = 4';\n\techo ' - а равно 2' ;\n//\tdefault :\n//\techo \"string\";\n\t//break;\n\n}\n\n\n\n\n\n\n\n\n\n?>",
+			"file": "/D/home/oop.ru/www/switch.php",
+			"file_size": 519,
+			"file_write_time": 131285527812269331,
+			"settings":
+			{
+				"buffer_size": 407,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<?php \nfunction clean_text ($str){\n\tif(get_magic_quotes_gpc()==1){\n\t\t$str = str_replace('\\\"', \"&quot;\", $str);\n\t\t$str = str_replace('\\'', \"&#039;\", $str);\n\t\t$str = str_replace('<', \"&lt;\", $str);\n\t\t$str = str_replace('>', \"&gt;\", $str);\t\n\t} \n\telse{$str = htmlspecialchars($str,ENT_QUOTES,\"UTF-8\",false);}\n\treturn $str;\n}\n$str = clean_text($_POST['text']);\necho $str;\n?>\n\n<form method =\"post\"> \n<input type=\"text\" name=\"text\" value=\"<?=$str;?>\" />\n<input type=\"submit\" value=\"Run\" />\n</form>",
+			"file": "/D/home/oop.ru/www/quot.php",
+			"file_size": 508,
+			"file_write_time": 131282890619294102,
+			"settings":
+			{
+				"buffer_size": 490,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/home/oop.ru/www/default.php",
+			"settings":
+			{
+				"buffer_size": 116,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/home/oop.loc/www/loops.php",
+			"settings":
+			{
+				"buffer_size": 1343,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -334,23 +382,34 @@
 	],
 	"file_history":
 	[
+		"/D/home/oop.loc/www/fact.php",
+		"/D/home/oop.loc/www/loops.php",
+		"/D/home/oop.ru/www/controllers/c_content.php",
+		"/D/home/oop.ru/www/body.php",
+		"/D/home/oop.loc/www/pal.php",
+		"/D/home/oop.ru/www/controllers/ccreateedit.php",
+		"/D/home/oop.ru/www/index.php",
+		"/D/home/oop.ru/www/views/vcreate.php",
+		"/D/home/oop.ru/www/views/vedit.php",
+		"/E/downloads/repo/snarksliveshere.github.io/index.html",
+		"/E/downloads/repo/snarksliveshere.github.io/css/gallery.less",
+		"/E/такле/ДАМПЫ САЙТОВ/правленое резюме",
+		"/E/downloads/repo/snarksliveshere.github.io/css/projects.less",
+		"/E/downloads/repo/snarksliveshere.github.io/css/themes.less",
+		"/E/downloads/repo/snarksliveshere.github.io/css/posts.less",
+		"/E/downloads/repo/snarksliveshere.github.io/css/style.less",
+		"/E/downloads/repo/snarksliveshere.github.io/css/legend.less",
+		"/D/home/long.loc/debug/index.html",
 		"/E/downloads/repo/snarksliveshere.github.io/css/services.less",
 		"/E/downloads/repo/snarksliveshere.github.io/css/briefing.less",
 		"/E/downloads/repo/snarksliveshere.github.io/css/statistics.less",
-		"/E/downloads/repo/snarksliveshere.github.io/css/themes.less",
-		"/E/downloads/repo/snarksliveshere.github.io/css/gallery.less",
-		"/E/downloads/repo/snarksliveshere.github.io/css/posts.less",
 		"/E/downloads/repo/snarksliveshere.github.io/css/index.html2",
 		"/E/downloads/repo/snarksliveshere.github.io/css/services.css",
-		"/E/downloads/repo/snarksliveshere.github.io/css/legend.less",
 		"/E/downloads/repo/snarksliveshere.github.io/css/projects.css",
 		"/E/downloads/repo/snarksliveshere.github.io/css/themes.css",
 		"/E/downloads/repo/snarksliveshere.github.io/css/gallery.css",
-		"/E/downloads/repo/snarksliveshere.github.io/css/projects.less",
-		"/E/downloads/repo/snarksliveshere.github.io/css/style.less",
 		"/E/downloads/repo/snarksliveshere.github.io/css/style.css",
 		"/E/downloads/repo/snarksliveshere.github.io/index.this",
-		"/E/downloads/repo/snarksliveshere.github.io/index.html",
 		"/D/home/train.loc/www/less/legend.css",
 		"/D/home/train.loc/www/less/legend.less",
 		"/D/home/train.loc/www/less/style.less",
@@ -441,27 +500,16 @@
 		"/D/home/train.loc/www/dopmat/reset.css",
 		"/D/home/oop.loc/www/test.php",
 		"/D/home/cp.loc/www/cake/index.php",
-		"/D/home/oop.loc/www/loops.php",
-		"/D/home/oop.ru/www/views/vedit.php",
 		"/D/home/oop.loc/www/ifelse.php",
-		"/D/home/oop.loc/www/fact.php",
 		"/D/home/oop.ru/www/models/mcreateedit.php",
 		"/D/home/oop.ru/www/config/db.php",
-		"/D/home/oop.ru/www/controllers/ccreateedit.php",
 		"/D/home/oop.ru/www/switch.php",
 		"/D/home/oop.ru/www/views/vlist.php",
 		"/D/home/oop.ru/www/views/v_content.php",
 		"/D/home/oop.ru/www/header.php",
 		"/D/home/oop.ru/www/config/config.php",
 		"/E/такле/ДАМПЫ САЙТОВ/список.txt",
-		"/D/home/oop.ru/www/views/v_menu.php",
-		"/D/home/oop.ru/www/adm/index.php",
-		"/D/home/oop.ru/www/adm/logon.php",
-		"/F/Учиться/web/php oop/php-oop/php-oop-014-sessions-adm_access/www/adm/index.php",
-		"/D/home/oop.ru/www/test/ses2.php",
-		"/D/home/oop.ru/www/test/ses1.php",
-		"/D/home/oop.ru/www/views/vcreate.php",
-		"/D/home/medkrug/css/navigation.css"
+		"/D/home/oop.ru/www/views/v_menu.php"
 	],
 	"find":
 	{
@@ -517,28 +565,27 @@
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "/D/home/oop.loc/www/pal.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19342,
+						"buffer_size": 1316,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9292,
-								9292
+								710,
+								710
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 4902.0,
+						"translation.y": 540.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -546,25 +593,24 @@
 				},
 				{
 					"buffer": 1,
-					"file": "css/style.less",
+					"file": "/D/home/train.loc/www/javascript/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4387,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								376,
-								376
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -575,31 +621,143 @@
 				},
 				{
 					"buffer": 2,
-					"file": "css/legend.less",
+					"file": "/D/home/oop.ru/www/home.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1544,
+						"buffer_size": 40,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1166,
-								1166
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/home/oop.ru/www/switch.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 407,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								398,
+								398
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1215.0,
+						"translation.y": 567.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/home/oop.ru/www/quot.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/D/home/oop.ru/www/default.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 116,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/D/home/oop.loc/www/loops.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1343,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								337,
+								337
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 567.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
