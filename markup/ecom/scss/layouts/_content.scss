@@ -1,0 +1,196 @@
+ 
+//MAIN
+ .main{
+ 	@include container(content-box);
+	@include susy-clearfix;
+ }
+ @include susy-breakpoint($iphone) {
+	.main{
+	padding-bottom:40px;
+	margin-top:25px;
+	}
+}
+@include susy-breakpoint($tablet){
+	@include layout($tablet-grid);
+}
+
+ @include susy-breakpoint($orig) {
+	.main{
+	//@include container();
+	@include layout($content-grid);
+	@include susy-clearfix;
+	padding-bottom:40px;
+	margin-top:25px;
+	}
+}
+
+// SLIDER
+
+@include susy-breakpoint($all){
+	.slider__wrap{
+		display:none;
+	}
+}
+@include susy-breakpoint($orig){
+	.slider__wrap{
+		@include span(1 of 1 0 inside);
+	}
+}
+
+// SIDEBAR
+
+.sidebar__nav_resp{
+	display:block;
+	text-align: center;
+	position:relative;
+	width:40px;
+	height:40px;
+	margin:0 auto;
+	cursor:pointer;
+	&:after{
+		content:'';
+		display: block;
+		border: 30px solid transparent;
+		border-top: 23px solid rgb(140, 20, 50);
+		width: 0;
+		height: 0;
+		position: absolute;
+		left:-10px;
+		z-index:1;
+	}
+	&:before{
+		content:'';
+		display: block;
+		border: 30px solid transparent;
+		border-top: 15px solid rgb(255, 255, 255);
+		width: 0;
+		height: 0;
+		left:-10px;
+		position: absolute;
+		z-index:2;
+	}
+}
+.review_resp{
+	@extend .sidebar__nav_resp;
+	top:40px;
+}
+// $iphone -> $iphone-middle
+@include susy-breakpoint($iphone-middle){
+	.sidebar{
+	@include span(1 of 1);
+	//@include susy-clearfix;
+		&__nav{
+			
+		}
+		&__menu{
+				
+			&-link{
+
+				display:block;
+				
+			}
+		}
+
+	}
+	.review{
+		display:none;
+		&__more{
+
+			display:none;
+		}
+	}	
+	.payment{
+		margin-bottom:20px;
+	}
+}
+
+
+
+@include susy-breakpoint($tablet){
+	.sidebar{
+		@include span(1 of 3);
+	}
+}
+@include susy-breakpoint($tablet){
+	.sidebar{
+		&__nav{
+			&_resp{
+				display:none;
+			}
+		}
+		&__menu{
+			&-link{
+				display:block;
+			}
+		}
+	}
+	.review{
+		display:block;
+	}
+}
+@include susy-breakpoint($orig){
+	.sidebar{
+	@include span(1 of 4);
+	//@include susy-clearfix;
+		&__nav{
+			&_resp{
+				display:none;
+			}
+		}
+		&__menu{
+			&-link{
+				display:block;
+			}
+		}
+
+
+	}
+	.review{
+		display:block;
+		&_resp{
+		display:none;
+		}
+		&__more{
+			display:inline-block;
+		}
+
+	}
+}
+
+
+//CONTENT
+@include susy-breakpoint($iphone){
+	.content{
+	@include span(1 of 1 nest );
+	//display:none;
+	}
+}
+@include susy-breakpoint($tablet){
+	.content{
+		@include span(2 of 3 last);	
+	}
+	
+}
+@include susy-breakpoint($orig){
+	.content{
+	@include span(3 of 4 1/16 nest last );
+	}
+}
+
+.pager{
+	@include span(1 of 1);
+}
+@include susy-breakpoint($iphone){
+	.pager{
+		&__item{
+			margin-left:6px;
+		}
+	}
+}
+@include susy-breakpoint($orig){
+	.pager{
+		&__item{
+			margin-left:20px;
+		}
+	}
+}

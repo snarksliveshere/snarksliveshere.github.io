@@ -1,0 +1,131 @@
+@include susy-breakpoint($tablet){
+	.slider{
+		height: 268px;
+		&__label{
+		position:absolute;
+				&_one{
+		    	top:8px;
+		    }
+		    &_two{
+		    	top:103px;
+		    }
+		    &_three{
+		    	top:196px;
+		    }
+		}
+	}
+}
+@include susy-breakpoint($orig){
+	.slider{
+		height: 338px;
+		
+		&__label{
+			position:absolute;
+			&_one{
+	    	top:13px;
+		    }
+		    &_two{
+		    	top:124px;
+		    }
+		    &_three{
+		    	top:236px;
+		    }
+		}
+	}
+
+}	
+.slider{
+	position: relative;
+	background: #fff;
+	border-radius:5px;
+	padding:5px;
+	&__wrap{
+		@include wide-border;
+		margin-bottom:30px;
+	}
+	
+	&__input[type="radio"]:checked + label{
+		position: absolute;
+		 z-index: 1;
+	     cursor: default;
+	     border:2px solid #f8f5c6;
+	}
+	&__input[type="radio"]:checked:not(:disabled) ~ div {
+    display: block;
+	}
+	&__input[type="radio"]:disabled + label {
+    opacity: .5;
+    cursor: no-drop;
+
+	}
+	
+	&__label{
+		display:block;
+		width:17%;
+	    cursor: pointer;
+	    -moz-user-select: none;
+	    -webkit-user-select: none;
+	    user-select: none;
+	    position: absolute;
+	    z-index:3;
+	    right:13px;
+	    &:checked{
+	    	border:3px solid #f8f5c6;
+	    	;
+	    }
+	    
+	    &:checked{
+	    	border:3px solid #f8f5c6;
+	    	right:10px;
+	    }
+	}
+	&__input[type="radio"]{
+		position: absolute;
+		  opacity: 0;
+		  &~div{
+		  	 display: none;
+		  }
+	}
+	&__tab{
+		display:block;
+		width:100%;
+	}
+	&__item{
+		display:inline-block;
+		vertical-align:top;
+		//position: absolute;
+		
+		&>div {
+			position:absolute;
+		}
+	}
+	&__img{
+		z-index:1;
+		display:block;
+		width: 100%;
+
+	}
+
+	&__shop{
+		position:absolute;
+		bottom:71px;
+		right:243px;
+		border:9px solid #ebe8b0;
+		border-radius:38px;
+		&-link{
+			background: #f49a86;
+			background: linear-gradient(to bottom, #ffbeaf, #fe7051 );
+			border:1px solid #e8360f;
+			border-radius:5px;
+			font:700 18px Rockwell, Arial, sans-serif;
+			color:#fff;
+			padding:5px 25px;
+			border-radius:20px;
+
+		}
+	}
+
+}
+
+
+

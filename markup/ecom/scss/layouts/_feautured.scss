@@ -1,0 +1,103 @@
+
+// $iphone-> $iphone-middle
+@include susy-breakpoint($iphone-middle){
+	.feautured{
+		//@include layout($feautured-resp);
+		//@include container(fluid content-box);
+		
+	&__title{
+		@include span(1 of 1);
+		margin-top:12px;		
+
+	}
+	&__wrap{
+		@include span(1 of 1 inside );
+		text-align:center;
+	}
+	&__item{
+		&:first-child{
+			border-top-left-radius:10px;
+			border-top-right-radius:10px;
+		}
+		&:last-child{
+			border-bottom-left-radius:10px;
+			border-bottom-right-radius:10px;
+		}
+		@include span(1 of 1 );	
+		&-now{
+			margin:10px 0 0;
+			&:before{
+				left:107px;
+				top:2px;
+			}
+		}
+	}
+	&__img{
+		
+		display:inline-block;
+	}
+
+}
+}
+@include susy-breakpoint($tablet){
+	.feautured{
+		&__item{
+			@include span(1 of 2 inside 0);
+			background: #fff;
+			text-align:center;
+			&:last-child{
+				// просто для tablet
+				display:none;
+			}
+			&-now{
+				&:before{
+					left:79px;
+				}
+			}
+		}	
+	}
+}
+
+
+@include susy-breakpoint($orig){
+	.feautured{
+		@include layout($feautured-grid);
+		@include container(72rem);
+	&__title{
+		@include span(1 of 1);
+	}
+	&__wrap{
+		@include span(1 of 1 nest );
+	}
+	&__item{
+		padding-left:10px;
+		@include span(1 of 3 );	
+		&:first-child{
+			border-right:none;
+			border-top-left-radius:10px;
+			border-bottom-left-radius:10px;
+		}
+		&:nth-child(2){
+			border-left:none;
+			border-right:none;
+		}
+		&:last-child{
+			@include span(1  last);	
+			border-left:none;
+			border-top-right-radius:10px;
+			border-bottom-right-radius:10px;	
+		}
+		&-title{
+			margin:20px 0 15px;
+		}
+		&-now{
+			margin:10px 0 15px;
+			&:before{
+				left:-11px;
+				top:2px;
+			}
+		}
+	}
+}
+}
+

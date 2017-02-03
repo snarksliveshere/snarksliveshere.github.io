@@ -1,0 +1,84 @@
+@include susy-breakpoint($iphone){
+	.popular{
+		@include layout($popular-resp);
+		
+		//@include span(1 of 1 0);
+		//@include span(1 of 1 nest)
+		&__title{
+			@include span(1 of 1 0  fluid);
+		}
+		&__wrap{
+
+			margin-bottom:16px;
+			@include span(1 of 2 inside 0);
+		//	box-sizing:border-box;
+
+		}
+		&__img{
+
+		}
+	}
+}
+@include susy-breakpoint($iphone6){
+	.popular{
+		&__wrap{
+			@include span(0.95 of 2 1/12 );
+			&:nth-child(odd){
+				@include span(0.95 last);
+			}
+		}
+	}
+}
+@include susy-breakpoint($middle){
+	.popular{
+		&__title{
+			@include span(1 of 1);
+		}
+		&__wrap{
+			@include span(0.86 of 2 1/4 );
+			&:nth-child(odd){
+				@include span(0.76 last);
+			}
+			&__img{
+				padding-left:2px;
+			}
+		}
+	}
+}@include susy-breakpoint($tablet){
+	.popular{
+		&__title{
+			@include span(1 of 1);
+		}
+		&__wrap{
+
+			@include span(0.98 of 3 inside);
+
+		}
+	}
+}
+@include susy-breakpoint($orig){
+	.popular{
+	
+	@include layout($popular-grid);
+	//@include span(1 of 1 nest)
+	&__title{
+		@include span(1 of 1 0  fluid);
+	}
+	&__wrap{
+		//@include layout($popular-grid);
+		box-sizing:border-box;
+		margin-bottom:16px;
+		@include span(1 of 4 );
+		&:nth-child(4){
+			@include span(1 last);
+		}
+		&:last-child{
+		@include span(1 last);
+		}
+	}
+	&__img{
+		padding-left:1px;
+	}
+}
+}
+

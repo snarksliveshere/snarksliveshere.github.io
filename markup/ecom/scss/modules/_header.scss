@@ -1,0 +1,166 @@
+.header{
+	&__panel{
+		padding-top:7px;
+
+	}
+	&__phone{
+		font-family:Rockwell, sans-serif;
+		color:#fff;
+		line-height:1;
+	}
+	&__over{
+		@extend %font-header;
+		padding-top:7px;
+
+	}
+	&__social{
+		&-link{
+			display:inline-block;
+			width: 29px;
+			height: 29px;
+			
+			&:first-child{
+				margin-left:0;
+			}
+		}
+
+	}
+	&__basket{
+		@extend %font-header;
+		text-align:right;
+		&-text{
+			text-align:left;
+			margin-right:14%;
+		}
+		a{
+			display:inline-block;
+			
+			
+			color:#fff;
+			padding:5px 14px;
+		}
+		&-wrap{
+			display:inline-block;
+			border:1px solid #881c04;
+			box-shadow:3px 5px rgba(0,0,0,.5);
+			&_shop{
+				background: #f49a86;
+				background: linear-gradient(to bottom, #ffbeaf, #fe7051 );
+				
+				border-top-left-radius:15px;
+				border-bottom-left-radius:15px;	
+			}
+			&_price{
+				background: #ffd1c7;
+				background: linear-gradient (to bottom, #ffd1c7,#fe6f50);
+				border-top-right-radius:15px;
+				border-bottom-right-radius:15px;	
+			}
+		}
+		&-shop{
+			
+			//background: linear-gradient(to bottom, #f49a86,#da4b2c);
+			
+			text-indent:15px;
+			
+		}
+		&-price{
+			
+			
+			font-weight:bold;			
+		}
+	}
+
+	&__nav{
+
+	}
+	&__menu{
+		&-link{
+			font:700 13px 'Arial Bold', Arial, sans-serif;
+			color:#f1f1f1;
+			text-transform:uppercase;
+			text-align:center;
+			padding:5px;
+			&:active{
+				color:#f8f5c6;
+			}
+			&:hover{
+				background: rgba(0,155,154,.5);
+				border-radius:4px;
+				box-shadow: 0 3px 3px #575555 inset; 
+			}
+		}
+	}
+	&__login{
+		a{
+			display: inline-block;
+			font-family: 'Arial Bold', Arial, sans-serif;
+			font-size:1.2rem;
+			font-weight:700;
+			border:1px solid #007f7e;
+			padding: 7px 0;
+			text-transform:uppercase;
+			box-sizing:border-box;
+			
+			
+		}
+		&-sign{
+			color:#fe6847;
+			border-bottom:none;
+			border-top-left-radius:4px;
+			border-top-right-radius:4px;
+			background: #e6f3f3;
+			background: linear-gradient (to bottom, #e6f3f3,#c4e2e2);
+
+
+		}
+		&-register{
+			color:#008281;
+			background: #8fdada;
+			background: linear-gradient (to bottom, #8fdada,#4bbdbd);
+			border-bottom-left-radius:4px;
+			border-bottom-right-radius:4px;
+		}
+
+	}
+	&__form{
+			width:100%;
+			position:relative;
+		&_wrap{
+			border-top: 1px solid #198067;
+			border-radius:4px;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+			background: url(#{$images}body-bg.jpg);
+			position: relative;
+			&:after{
+					content:'';
+					@include sprites-sprite(zoom);
+					display:block;
+					width: 19px;
+					height: 16px;
+					position: absolute;
+					right:15px;
+					bottom:2px;
+
+				}
+		}
+		
+		&-input{
+			width:99%;
+		}
+		&-submit{
+			background: #ffbeaf;
+			background: linear-gradient( to bottom, #ffbeaf, #fe7051 ) ;
+			text-transform:uppercase;
+			font-weight:700;
+			font-size:1.1rem;
+			color:#901c03;
+			border:1px solid #395070;
+			text-align:left;
+			
+			
+		}
+	}
+
+}

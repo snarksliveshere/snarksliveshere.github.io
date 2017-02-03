@@ -1,0 +1,27 @@
+
+@import "include";
+
+
+
+html{
+	font-size:10px;
+}
+body{
+	background: $color-bg url(#{$images}body-bg.jpg);
+	font:400 Arial, sans-serif;
+	font-size:1.2rem;
+	color:$color-body;
+}
+a{
+	text-decoration:none;
+	&[href*="twitter.com"] { @include sprites-sprite(twitter); }
+	&[href*="facebook.com"] { @include sprites-sprite(facebook); }
+	&[href*="gmail.com"] { @include sprites-sprite(mail); }
+	&[href*="rss.com"] { @include sprites-sprite(rupor); }
+	&[href*="callback"] { @include sprites-sprite(phone); }
+	&[href*="basket"] { @include sprites-sprite(basket); }
+	&[href*="lock"] { @include sprites-sprite(lock); }
+	&[href*="register"] { @include sprites-sprite(pencil); }
+	&[href*="secured"] { @include sprites-sprite(sign); }
+	&[href*="delivery"] { @include sprites-sprite(box); }
+}

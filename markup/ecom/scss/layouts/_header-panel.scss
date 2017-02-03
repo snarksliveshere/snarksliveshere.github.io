@@ -1,0 +1,141 @@
+.wrap-all-header{
+	background: $color-hdup url(#{$images}down-header.jpg);
+}
+.wrap-up-header{
+	position: relative;
+	background: url(#{$images}header-bg.jpg);
+
+	&:after{
+		display: block;
+		width: 100%;
+		height: 13px;
+		background:  url(#{$images}header-triangle.png) repeat-x;
+		content: '';
+		position: absolute;
+		bottom:-12px;
+	}
+}
+.header{
+			
+	&__panel{
+		@include container();
+		@include susy-clearfix;
+	}
+}
+// меняю $iphone -> $iphone-middle
+@include susy-breakpoint($iphone){
+	.header{
+		&__phone{
+			margin-left:0;
+			text-indent:16px;
+		}
+	}
+}
+@include susy-breakpoint($iphone6-middle){
+	.header{
+		&__phone{
+			text-indent:25px;
+		}
+	}
+}
+@include susy-breakpoint($iphone-middle){
+	.header{
+		&__panel{
+			@include layout($iphone-grid);
+		}
+		&__phone{
+			@include span (1 of 3 before );
+			padding-top:8px;
+			margin-right:0;
+			margin-left:1rem;
+						
+		}
+		&__over{
+			display:none;
+		}
+		&__social{
+			@include span(1 of 2 last);
+			text-align:right;
+			margin-right:1rem;
+			&-link{
+			//	margin-left:0;
+			}
+
+		}
+		&__basket{
+			@include span (1 of 1);
+			margin-top:1rem;
+			margin-bottom:1.5rem;
+			//padding-right:1rem;
+			&-text{
+				display:none;
+			}
+
+		}
+		&__form{
+			&_wrap{
+			@include span(1 of 1);
+			@include push(0);
+			}
+
+		}		
+	}
+
+}
+
+@include susy-breakpoint($tablet){
+	.header{
+		&__panel{
+			@include layout(7);
+		@include container();
+		@include susy-clearfix;
+		}
+		&__phone{
+			font-size:1.5rem;
+			@include span(2);
+			text-indent:25px;
+		}
+		&__over{
+
+			display:none;
+		}
+		&__social{
+			@include span(2);
+			&-link{
+				margin-left:1.2rem;
+			}
+		}
+		&__basket{
+			@include span(3 last);
+		}
+
+	}	
+}
+@include susy-breakpoint($orig){
+	.header{
+		&__panel{
+			@include layout(10);
+		@include container();
+		@include susy-clearfix;
+		}
+		&__phone{
+			font-size:2rem;
+			@include span(2 of 10);
+			text-indent:25px;
+		}
+		&__over{
+
+			@include span(3);
+		}
+		&__social{
+			@include span(2);
+			&-link{
+				margin-left:1.2rem;
+			}
+		}
+		&__basket{
+			@include span(3 last);
+		}
+
+	}	
+}

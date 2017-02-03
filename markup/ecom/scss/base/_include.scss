@@ -1,0 +1,58 @@
+@import "susy";
+@import "compass/reset";
+@import "breakpoint";
+@import "sprites/*.png";
+@import "compass/utilities/sprites";
+
+//path:
+$images : '../images/';
+$img-content : '../images/img-content/';
+
+$color-bg: #f8f5c6; 
+$color-hd:#567093;
+$color-hdup:#6fcccc;
+$color-body:#707070;
+$color-head:#bacde4;
+
+// @include susy-breakpoint()
+//$iphone: 320px 480px;
+$all:320px 767px;
+$iphone: 320px 375px;
+$iphone-middle:320px 767px;
+$iphone6-middle:375px 767px;
+$iphone6:375px 425px;
+$middle:425px 767px;
+//$iphone6: 375px 667px;
+//$iphone6: 375px 736px;
+$tablet: 768px 969px;
+$tablet-all:767px;
+$orig:970px;
+
+@mixin footer-h4{
+	font:700 15px 'Arial Bold', Arial, sans-serif;
+	color:#f8f5c6;
+	margin-bottom:30px;
+}
+@mixin footer-link{
+	font:13px Arial, sans-serif;
+	color:#cfcfcf;
+	line-height:1.8;
+}
+
+%h2{
+	font:20px 'Rockwell Regular', Arial, sans-serif;
+		text-transform:capitalize;
+		@include sprites-sprite(arrow2right);
+		text-indent:30px;
+		//margin-left:10px;
+		margin-top:20px;
+		margin-bottom:20px;
+}
+@mixin wide-border{
+		border:5px solid #ebe8b0;
+		border-radius:15px;
+}	
+%font-header{
+	font-size:1.4rem;
+	color:$color-head;
+}

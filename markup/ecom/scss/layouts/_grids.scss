@@ -1,0 +1,84 @@
+// Requirements
+// ============
+
+$susy : (
+	columns:10,
+	gutters:1/2,
+	container:97rem,
+	math:fluid,
+	//container-position:center,
+	global-box-sizing:content-box,
+	//gutter-position:inside,
+	//output:isolate
+	);
+	$header-grid : (
+		container:97rem,
+		columns:7,
+		gutters:1/2,
+		math:fluid,
+		gutter-position:inside,
+	);
+	$content-grid:(
+		columns:4,
+		gutters:10px/235px,
+		container:720px,
+		math:fluid,
+		//gutters:1/4,
+		//gutter-position:inside
+		);
+	$feautured-grid:(
+		columns:3,
+		gutter-position:inside,
+		gutters:1/8,
+		math:fluid,
+		);
+	$popular-grid :(
+		columns:4,
+		gutters:10px/160px,
+		gutter-position:after,
+		);
+	$iphone-grid:(
+		gutters:0,
+		//container:auto,
+		columns:3,
+		math:fluid, 
+		);
+	$iphone-main:(
+		
+		);
+	$footer-resp: (
+		columns:2,
+		//gutter-position:before,
+		gutters: 0,
+
+		);
+	$feautured-resp:(
+		columns:1,
+		gutters:0,
+		);
+	$popular-resp:(
+		columns:2,
+		gutters:5px/140px,
+		container:static,
+		);
+	$tablet-grid:(
+		columns:3,
+		gutters:10px/235px,
+		//container:720px,
+		math:fluid,
+		//gutters:1/4,
+		//gutter-position:inside
+		);
+
+	
+
+
+
+
+
+
+
+
+
+
+

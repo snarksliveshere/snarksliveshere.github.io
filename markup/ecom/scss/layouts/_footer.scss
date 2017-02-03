@@ -1,0 +1,164 @@
+.footer{
+	background:  url(#{$images}header-bg.jpg);
+	position: relative;
+	
+	
+	&:before{
+		display: block;
+		content: '';
+		height: 12px;
+		width: 100%;
+		background: url(#{$images}footer-triangle.png) repeat-x;
+		position: absolute;
+		top:-10px;
+		
+	}
+
+}
+// $iphone-> $iphone-middle
+@include susy-breakpoint($iphone-middle){
+	.footer{
+		&__wrap{
+		@include layout($footer-resp);	
+		@include susy-clearfix;
+		padding:20px 0 30px 0;
+		}
+		&__title{
+			
+		}
+		&__nav{
+			padding-left:1rem;
+			@include span(1 of 2 );
+			//display:block;
+			//margin-left:20px;
+			&__nav:nth-child(2){
+				margin-left:0;
+			}
+			&_block{
+				//display:block;
+				//float:right;
+				//max-width:250px;
+				@include span(1 of 1);
+					&_links{
+						@include span(1 last);
+						//float:right;
+					}
+			}
+			&_form{
+				@include span(1 of 1);
+			}
+			
+		}
+		&__menu{
+				
+			&-item{
+				display: block;
+			}
+		}
+		&__secured{
+			&-text{
+				display:none;
+			}
+		}
+		&__delivery{
+			&-text{
+				display:none;
+			}
+		}
+		&__copy{
+			@include span(1 of 1);
+		}
+	}
+}
+@include susy-breakpoint($tablet){
+	.footer{
+		&__nav{
+			&_block{
+				&_links{
+					display:none;
+				}
+			}
+		}
+
+	}
+}
+@include susy-breakpoint($tablet-all){
+	.footer{
+		&__wrap{
+		@include container();
+		//@include layout($footer);	
+		@include susy-clearfix;
+		padding:20px 0 30px 0;
+	}
+	&__title{
+		
+	}
+	&__nav{
+		display:inline-block;
+		margin-left:60px;
+		&:first-child{
+			margin-left:0;
+		}
+		&_block{
+			display:block;
+			float:right;
+			max-width:250px;
+				&_links{
+					max-width:200px;
+					float:right;
+				}
+		}	
+	}
+	&__menu{
+		
+		
+		
+		&-item{
+			display: block;
+		}
+	}
+	}
+}
+
+
+@include susy-breakpoint($orig){
+	.footer{
+		&__wrap{
+		@include container(97rem);
+		//@include layout($footer);	
+		@include susy-clearfix;
+		padding:20px 0 30px 0;
+		position: relative;
+	}
+	&__title{
+		
+	}
+	&__nav{
+		display:inline-block;
+		margin-left:60px;
+		&:first-child{
+			margin-left:0;
+		}
+		&_block{
+			display:block;
+			float:right;
+			max-width:250px;
+				&_links{
+					max-width:200px;
+					float:right;
+				}
+		}	
+	}
+	&__menu{
+		
+		
+		
+		&-item{
+			display: block;
+		}
+	}
+	}
+}
+
+
+	
